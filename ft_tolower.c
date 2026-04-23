@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tolower.c                                          :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuta <yuta@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 12:43:58 by yuta              #+#    #+#             */
-/*   Updated: 2026/04/21 12:44:00 by yuta             ###   ########.fr       */
+/*   Created: 2026/04/23 13:46:16 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/23 13:46:38 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-// #include <stdio.h>
+#include <stdio.h>
 
-// int	main(void)
-// {
-// 	int	a;
+int	main(void)
+{
+	int	a;
 
-// 	a = ft_tolower('A');
-// 	printf("%c", a);
-// 	return (0);
-// }
+	a = ft_tolower('A');
+	printf("%c", a);
+	return (0);
+}

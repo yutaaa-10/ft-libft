@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/23 13:45:48 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/23 13:45:57 by yukurosa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stddef.h>
 
 char	*ft_strrchr(const char *s, int c)
@@ -29,7 +41,7 @@ int	main(void)
 	char	str[] = "hello";
 	char	*res;
 
-	res = ft_strrchr(str, 'l'); // もらうのはアドレスだからstrでもらうと配列だから、*resを作らなければいけない
+	res = ft_strrchr(str, 'l');
 	printf("%s", res);
 	return (0);
 }
