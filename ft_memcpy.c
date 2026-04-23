@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:39:47 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/23 13:39:49 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/23 13:48:23 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h> //使って良いか
+#include <stddef.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
