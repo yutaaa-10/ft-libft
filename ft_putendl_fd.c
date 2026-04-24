@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 08:34:50 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 09:18:10 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/24 09:13:46 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/24 09:19:09 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
@@ -24,12 +24,13 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
+	write(fd, "\n", 1);
 }
 
 int	main(void)
 {
-	char	str[] = "hello";
+	char	str[] = "world";
 
-	ft_putstr_fd(str, 1);
+	ft_putendl_fd(str, 1);
 	return (0);
 }
