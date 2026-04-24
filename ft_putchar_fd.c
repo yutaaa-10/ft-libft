@@ -1,45 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/23 13:42:57 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 13:00:30 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/23 15:46:05 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/23 15:51:20 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <unistd.h>
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (1)
-	{
-		if (s[i] == (char)c)
-		{
-			return ((char *)&s[i]);
-		}
-		if (s[i] == '\0')
-		{
-			break ;
-		}
-		i++;
-	}
-	return (NULL);
+	write(fd, &c, 1);
 }
-
-#include <stdio.h>
 
 int	main(void)
 {
-	char	str[] = "hello";
-	char	*res;
-
-	res = ft_strchr(str, 'l');
-	printf("%s", res);
+	ft_putchar_fd('a', 1);
 	return (0);
 }

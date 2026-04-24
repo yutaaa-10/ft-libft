@@ -1,45 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/23 13:42:57 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 13:00:30 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/24 11:35:21 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/24 12:29:48 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+// #include <unistd.h>
 
-char	*ft_strchr(const char *s, int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int	i;
+	unsigned int	i;
 
+	if (!s || !f)
+		return ;
 	i = 0;
-	while (1)
+	while (s[i])
 	{
-		if (s[i] == (char)c)
-		{
-			return ((char *)&s[i]);
-		}
-		if (s[i] == '\0')
-		{
-			break ;
-		}
+		f(i, &s[i]);
+		// write(1, &s[i], 1);
 		i++;
 	}
-	return (NULL);
 }
 
-#include <stdio.h>
+void	ft_making(unsigned int i, char *c)
+{
+	if (i % 2 == 0)
+		*c = 'a';
+}
 
 int	main(void)
 {
-	char	str[] = "hello";
-	char	*res;
-
-	res = ft_strchr(str, 'l');
-	printf("%s", res);
+	char s[] = "hello";
+	ft_striteri(s, ft_making);
 	return (0);
 }

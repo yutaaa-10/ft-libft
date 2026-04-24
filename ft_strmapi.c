@@ -1,35 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/23 13:42:57 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 13:00:30 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/24 13:22:19 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/24 13:48:48 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdlib.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
+	unsigned int	i;
+	unsigned int	len;
+	char			*res;
 
+	if (!s || !f)
+		return (NULL);
+	len = 0;
+	while (s[len])
+		len++;
+	res = (char *)malloc(sizeof(char) * (len + 1));
+	if (!res)
+		return (NULL);
 	i = 0;
-	while (1)
+	while (s[i])
 	{
-		if (s[i] == (char)c)
-		{
-			return ((char *)&s[i]);
-		}
-		if (s[i] == '\0')
-		{
-			break ;
-		}
+		res[i] = f(i, s[i]);
 		i++;
 	}
-	return (NULL);
+	res[i] = '\0';
+	return (res);
+}
+
+char	ft_alpha(unsigned int i, char c)
+{
+	(void)i;
+	c = 'a';
+	return (c);
 }
 
 #include <stdio.h>
@@ -39,7 +51,8 @@ int	main(void)
 	char	str[] = "hello";
 	char	*res;
 
-	res = ft_strchr(str, 'l');
+	res = ft_strmapi(str, ft_alpha);
 	printf("%s", res);
+	free(res);
 	return (0);
 }
