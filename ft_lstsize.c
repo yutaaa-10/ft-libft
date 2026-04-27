@@ -1,41 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 09:16:31 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 14:02:53 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/27 12:49:35 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/27 13:50:30 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	if (!lst || !new)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	int	count;
+
+	count = 0;
+	while (lst != NULL)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }
 
 // int	main(void)
 // {
-// 	t_list	*list;
-// 	t_list	*node1;
-// 	t_list	*node2;
+// 	t_list *list;
+// 	t_list *node1;
+// 	t_list *node2;
+// 	int i;
 
 // 	list = NULL;
+
 // 	node1 = ft_lstnew("A");
 // 	node2 = ft_lstnew("B");
+
 // 	ft_lstadd_front(&list, node1);
 // 	ft_lstadd_front(&list, node2);
-// 	// 出力確認
-// 	while (list)
-// 	{
-// 		printf("%s\n", (char *)list->content);
-// 		list = list->next;
-// 	}
+
+// 	i = ft_lstsize(list);
+// 	printf("%d", i);
 // 	return (0);
 // }

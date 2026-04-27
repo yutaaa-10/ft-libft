@@ -1,37 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/26 12:39:54 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 13:17:45 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/27 17:05:26 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/27 17:23:23 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-t_list	*ft_lstnew(void *content)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*node;
-
-	node = (t_list *)malloc(sizeof(t_list));
-	if (!node)
-		return (NULL);
-	node->content = content;
-	node->next = NULL;
-	return (node);
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 
+void	ftprint(void *content)
+{
+	printf("%s\n", (char *)content);
+}
 
+int	main(void)
+{
+	t_list *list;
+	t_list *node1;
+	t_list *node2;
 
-// int	main(void)
-// {
-// 	t_list	*node;
+	list = NULL;
 
-// 	node = ft_lstnew("hello");
-// 	printf("%s\n", (char *)node->content);
-// 	return (0);
-// }
+	node1 = ft_lstnew("hello");
+	node2 = ft_lstnew("world");
+	ft_lstadd_front(&list, node1);
+	ft_lstadd_front(&list, node2);
+	ft_lstiter(list, ftprint);
+	return (0);
+}

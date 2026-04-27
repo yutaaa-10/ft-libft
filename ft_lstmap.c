@@ -1,37 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/26 12:39:54 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 13:17:45 by yukurosa         ###   ########.fr       */
+/*   Created: 2026/04/27 17:33:24 by yukurosa          #+#    #+#             */
+/*   Updated: 2026/04/27 17:34:00 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*node;
-
-	node = (t_list *)malloc(sizeof(t_list));
-	if (!node)
-		return (NULL);
-	node->content = content;
-	node->next = NULL;
-	return (node);
 }
-
-
-
-// int	main(void)
-// {
-// 	t_list	*node;
-
-// 	node = ft_lstnew("hello");
-// 	printf("%s\n", (char *)node->content);
-// 	return (0);
-// }
