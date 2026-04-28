@@ -6,16 +6,16 @@
 #    By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/28 14:02:06 by yukurosa          #+#    #+#              #
-#    Updated: 2026/04/28 14:09:35 by yukurosa         ###   ########.fr        #
+#    Updated: 2026/04/28 15:02:05 by yukurosa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME=libft.a
+NAME = libft.a
 
-CC=CC
-CFLAGS= -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
-SRCS= \
+SRCS = \
 	ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
@@ -60,4 +60,22 @@ SRCS= \
 	ft_lstnew.c \
 	ft_lstsize.c
 
-OBJ = $(SRC:.c=.o)
+OBJS = $(SRCS:.c=.o)
+
+.PHONY: all clean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
