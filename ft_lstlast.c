@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 13:38:33 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 13:57:26 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:29:21 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,24 +21,24 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-int	main(void)
-{
-	t_list *list;
-	t_list *node1;
-	t_list *node2;
+// int	main(void)
+// {
+// 	t_list *list;
+// 	t_list *node1;
+// 	t_list *node2;
 
-	t_list *res;
+// 	t_list *res;
 
-	list = NULL;
+// 	list = NULL;
 
-	node1 = ft_lstnew("a");
-	node2 = ft_lstnew("b");
+// 	node1 = ft_lstnew("a");
+// 	node2 = ft_lstnew("b");
 
-	ft_lstadd_front(&list, node1);
-	ft_lstadd_front(&list, node2);
+// 	ft_lstadd_front(&list, node1);
+// 	ft_lstadd_front(&list, node2);
 
-	res = ft_lstlast(list);
+// 	res = ft_lstlast(list);
 
-	printf("%s", (char *)res->content);
-	return (0);
-}
+// 	printf("%s", (char *)res->content);
+// 	return (0);
+// }

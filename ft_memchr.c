@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:39:06 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/23 13:39:07 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:29:12 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str[] = "hello";
-	char	*res;
+// int	main(void)
+// {
+// 	char	str[] = "hello";
+// 	char	*res;
 
-	res = ft_memchr(str, 'l', 4);
-	printf("%s\n", res);
-	return (0);
-}
+// 	res = ft_memchr(str, 'l', 4);
+// 	printf("%s\n", res);
+// 	return (0);
+// }
