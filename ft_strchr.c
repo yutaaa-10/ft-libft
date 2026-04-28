@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:42:57 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 13:00:30 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:12:43 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -6,12 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 20:42:55 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/25 21:25:25 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:14:02 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	is_set(char c, char const *set)
 {
@@ -25,18 +24,6 @@ static int	is_set(char c, char const *set)
 		i++;
 	}
 	return (0);
-}
-
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)

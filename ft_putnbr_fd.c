@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 08:47:02 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 08:56:57 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:12:24 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

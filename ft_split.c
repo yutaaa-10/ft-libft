@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 09:16:15 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/26 11:09:19 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:12:38 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	isseparator(char s, char c)
 {

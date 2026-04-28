@@ -6,12 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 15:10:31 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 15:31:40 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:14:15 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static char	*ft_empty(void)
 {
@@ -22,18 +21,6 @@ static char	*ft_empty(void)
 		return (NULL);
 	res[0] = '\0';
 	return (res);
-}
-
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

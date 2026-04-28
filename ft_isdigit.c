@@ -6,9 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:38:11 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/23 13:38:12 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:10:43 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,26 +6,13 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 14:04:24 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/24 15:05:08 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:25:57 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_copy(char *res, const char *str, int *index)
+static char	*ft_copy(char *res, const char *str, int *index)
 {
 	int	i;
 

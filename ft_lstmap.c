@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 17:33:24 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 13:30:04 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:16:16 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (newlist);
 }
+
+#include <stdio.h>
 
 int	main(void)
 {

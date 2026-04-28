@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:43:43 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/23 13:43:45 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:15:28 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

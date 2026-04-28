@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:44:41 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/23 13:44:43 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:23:25 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -24,14 +24,14 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str[] = "hello";
-	int		a;
+// int	main(void)
+// {
+// 	char	str[] = "hello";
+// 	int		a;
 
-	a = ft_strlen(str);
-	printf("%d", a);
-	return (0);
-}
+// 	a = ft_strlen(str);
+// 	printf("%d", a);
+// 	return (0);
+// }

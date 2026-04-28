@@ -6,9 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 11:14:37 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 17:48:41 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:09:22 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

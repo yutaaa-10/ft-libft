@@ -6,11 +6,11 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 08:10:20 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/26 08:50:30 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:11:21 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	count_len(int n)
 {
