@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 08:47:02 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:12:24 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:47:05 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,4 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	c = (n % 10) + '0';
 	write(fd, &c, 1);
-}
-
-int	main(void)
-{
-	ft_putnbr_fd(1, 1);
-	return (0);
 }

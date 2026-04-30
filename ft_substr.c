@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 15:10:31 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:14:15 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:50:34 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	res[i] = '\0';
 	return (res);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char str[] = "yutakurosawa";
-	char *res;
-	res = ft_substr(str, 2, 6);
-	printf("%s", res);
-	return (0);
 }

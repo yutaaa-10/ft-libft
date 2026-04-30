@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 08:34:50 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:12:28 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:47:16 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,4 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-}
-
-int	main(void)
-{
-	char	str[] = "hello";
-
-	ft_putstr_fd(str, 1);
-	return (0);
 }

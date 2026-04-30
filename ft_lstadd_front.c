@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 09:16:31 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/27 14:02:53 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:41:08 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
-// int	main(void)
-// {
-// 	t_list	*list;
-// 	t_list	*node1;
-// 	t_list	*node2;
-
-// 	list = NULL;
-// 	node1 = ft_lstnew("A");
-// 	node2 = ft_lstnew("B");
-// 	ft_lstadd_front(&list, node1);
-// 	ft_lstadd_front(&list, node2);
-// 	// 出力確認
-// 	while (list)
-// 	{
-// 		printf("%s\n", (char *)list->content);
-// 		list = list->next;
-// 	}
-// 	return (0);
-// }

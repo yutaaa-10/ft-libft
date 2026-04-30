@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 09:13:46 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:12:20 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:46:32 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,4 @@ void	ft_putendl_fd(char *s, int fd)
 		i++;
 	}
 	write(fd, "\n", 1);
-}
-
-int	main(void)
-{
-	char	str[] = "world";
-
-	ft_putendl_fd(str, 1);
-	return (0);
 }

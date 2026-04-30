@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:39:47 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:12:00 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 15:38:00 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	const unsigned char	*s;
 
 	if (dst == src)
-	{
 		return (dst);
-	}
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
 	i = 0;
@@ -31,16 +29,4 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		i++;
 	}
 	return (dst);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "Hello,World!";
-	char	dest[20];
-
-	ft_memcpy(dest, src, 11);
-	printf("%s", dest);
-	return (0);
 }

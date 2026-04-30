@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:09:29 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:10:24 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 11:00:11 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,25 +31,4 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		i++;
 	}
 	return (ptr);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	int		*res;
-	size_t	i;
-
-	res = ft_calloc(5, sizeof(int));
-	if (!res)
-		return (1);
-	i = 0;
-	while (i < 5)
-	{
-		printf("%d ", res[i]);
-		i++;
-	}
-	printf("\n");
-	free(res);
-	return (0);
 }

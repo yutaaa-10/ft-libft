@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 11:14:37 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:09:22 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:40:03 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * sign);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "  -123";
-	int		a;
-
-	a = ft_atoi(str);
-	printf("%d", a);
-	return (0);
 }

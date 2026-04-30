@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:45:48 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:13:52 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:50:09 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,4 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	return (last);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "hello";
-	char	*res;
-
-	res = ft_strrchr(str, 'l');
-	printf("%s", res);
-	return (0);
 }

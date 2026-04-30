@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 20:42:55 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:14:02 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:50:20 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,15 +49,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 		res[i++] = s1[start++];
 	res[i] = '\0';
 	return (res);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*res;
-
-	res = ft_strtrim("   !Hello  ! ", " !");
-	printf("%s", res);
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 14:04:24 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:25:57 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:48:35 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,18 +45,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_copy(res, s2, &i);
 	res[i] = '\0';
 	return (res);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "hello";
-	char	src[] = "world";
-	char	*res;
-
-	res = ft_strjoin(str, src);
-	printf("%s", res);
-	free(res);
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:46:05 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:12:17 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:46:18 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,4 @@
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
-}
-
-int	main(void)
-{
-	ft_putchar_fd('a', 1);
-	return (0);
 }

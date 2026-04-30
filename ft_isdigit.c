@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:38:11 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:10:43 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:40:22 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,5 @@ int	ft_isdigit(int c)
 	{
 		return (1);
 	}
-	return (0);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	int	b;
-
-	b = ft_isdigit('4');
-	printf("%d", b);
 	return (0);
 }

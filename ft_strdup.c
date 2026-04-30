@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:43:43 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:15:28 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:48:05 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,4 @@ char	*ft_strdup(const char *s1)
 	}
 	dest[i] = '\0';
 	return (dest);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "rdetfhygj";
-	char	*res;
-
-	res = ft_strdup(str);
-	printf("%s", res);
-	return (0);
 }

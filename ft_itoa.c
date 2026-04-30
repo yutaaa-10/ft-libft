@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 08:10:20 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:11:21 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 11:01:03 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ static int	count_len(int n)
 	}
 	return (len);
 }
+
 char	*ft_itoa(int n)
 {
 	long	nb;
@@ -54,17 +55,4 @@ char	*ft_itoa(int n)
 		nb /= 10;
 	}
 	return (res);
-}
-
-#include <limits.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*res;
-
-	res = ft_itoa(INT_MIN);
-	printf("%s", res);
-	free(res);
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:45:29 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:13:47 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:49:53 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (NULL);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "abcdefg";
-	char	nee[] = "def";
-	char	*res;
-
-	res = ft_strnstr(str, nee, 7);
-	printf("%s", res);
-	return (0);
 }

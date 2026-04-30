@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 11:35:21 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/28 17:13:03 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/29 10:56:17 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	while (s[i])
 	{
 		f(i, &s[i]);
-		// write(1, &s[i], 1);
 		i++;
 	}
 }
@@ -31,11 +30,4 @@ void	ft_making(unsigned int i, char *c)
 {
 	if (i % 2 == 0)
 		*c = 'a';
-}
-
-int	main(void)
-{
-	char s[] = "hello";
-	ft_striteri(s, ft_making);
-	return (0);
 }
