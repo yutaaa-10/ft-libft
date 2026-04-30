@@ -6,15 +6,15 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 14:04:24 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 10:48:35 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 11:52:25 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_copy(char *res, const char *str, int *index)
+static char	*ft_copy(char *res, const char *str, size_t *index)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])
@@ -28,9 +28,9 @@ static char	*ft_copy(char *res, const char *str, int *index)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		s1len;
-	int		s2len;
+	size_t	i;
+	size_t	s1len;
+	size_t	s2len;
 	char	*res;
 
 	if (!s1 || !s2)
