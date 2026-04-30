@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 20:42:55 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 10:50:20 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 12:04:19 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	is_set(char c, char const *set)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (set[i])
@@ -28,10 +28,10 @@ static int	is_set(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
+	size_t	start;
+	size_t	end;
 	char	*res;
-	int		i;
+	size_t	i;
 
 	if (!s1 || !set)
 		return (NULL);

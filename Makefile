@@ -6,7 +6,7 @@
 #    By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/28 14:02:06 by yukurosa          #+#    #+#              #
-#    Updated: 2026/04/29 10:33:19 by yukurosa         ###   ########.fr        #
+#    Updated: 2026/04/30 12:41:23 by yukurosa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f main.c a.out
 
 re: fclean all
 

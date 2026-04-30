@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:00:27 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 10:40:40 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 12:31:11 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
+	if (!lst || !new)
+		return ;
 	if (*lst == NULL)
 	{
 		*lst = new;

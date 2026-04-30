@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 08:10:20 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 11:01:03 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 12:07:32 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	count_len(int n)
 char	*ft_itoa(int n)
 {
 	long	nb;
-	int		len;
+	size_t	len;
 	char	*res;
 
 	nb = n;

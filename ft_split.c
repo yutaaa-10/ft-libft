@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 09:16:15 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 12:34:28 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 12:45:39 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,10 @@ static char	*ft_make_word(const char *str, char c, int start)
 static void	free_all(char **result, int j)
 {
 	while (j > 0)
+	{
+		j--;
 		free(result[j]);
-	j--;
+	}
 	free(result);
 }
 

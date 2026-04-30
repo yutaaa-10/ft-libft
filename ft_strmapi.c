@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:22:19 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 10:49:32 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 11:47:02 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,12 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	unsigned int	len;
+	size_t			len;
 	char			*res;
 
 	if (!s || !f)
 		return (NULL);
-	len = 0;
-	while (s[len])
-		len++;
+	len = ft_strlen(s);
 	res = (char *)malloc(sizeof(char) * (len + 1));
 	if (!res)
 		return (NULL);
@@ -34,11 +32,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	res[i] = '\0';
 	return (res);
-}
-
-char	ft_alpha(unsigned int i, char c)
-{
-	(void)i;
-	c = 'a';
-	return (c);
 }

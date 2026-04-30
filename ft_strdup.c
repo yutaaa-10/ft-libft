@@ -6,7 +6,7 @@
 /*   By: yukurosa <yukurosa@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:43:43 by yukurosa          #+#    #+#             */
-/*   Updated: 2026/04/29 10:48:05 by yukurosa         ###   ########.fr       */
+/*   Updated: 2026/04/30 11:29:54 by yukurosa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int		i;
-	int		len;
+	size_t	i;
+	size_t	len;
 	char	*dest;
 
-	len = 0;
-	while (s1[len])
-		len++;
+	len = ft_strlen(s1);
 	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (!dest)
 		return (NULL);
